@@ -11,7 +11,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { MapPinIcon as MapPinSolidIcon, EnvelopeIcon as EnvelopeSolidIcon } from '@heroicons/react/24/solid';
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid';
-import { Github, Linkedin, Pin } from 'lucide-react';
+import { Github, Linkedin, Pin, QrCode } from 'lucide-react';
 import type { SiteConfig } from '@/lib/config';
 import { useMessages } from '@/lib/i18n/useMessages';
 
@@ -43,7 +43,9 @@ export default function Profile({ author, social, features, researchInterests }:
     const [isAddressPinned, setIsAddressPinned] = useState(false);
     const [showEmail, setShowEmail] = useState(false);
     const [isEmailPinned, setIsEmailPinned] = useState(false);
-    const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'address' | null>(null);
+    const [showWeChat, setShowWeChat] = useState(false);
+    const [isWeChatPinned, setIsWeChatPinned] = useState(false);
+    const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'wechat' | 'address' | null>(null);
 
     // Check local storage for user's like status
     useEffect(() => {
@@ -75,6 +77,12 @@ export default function Profile({ author, social, features, researchInterests }:
             href: `mailto:${social.email}`,
             icon: EnvelopeIcon,
             isEmail: true,
+        }] : []),
+        ...(social.wechat ? [{
+            name: messages.profile.wechat,
+            href: social.wechat,
+            icon: QrCode,
+            isWeChat: true,
         }] : []),
         ...(social.location || social.location_details ? [{
             name: messages.profile.location,
@@ -280,6 +288,77 @@ export default function Profile({ author, social, features, researchInterests }:
                                                         <span className="hidden sm:inline">{messages.profile.sendEmail}</span>
                                                     </a>
                                                 </div>
+                                            </div>
+                                            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-neutral-800"></div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        );
+                    }
+                    if (link.isWeChat) {
+                        return (
+                            <div key={link.name} className="relative">
+                                <button
+                                    onMouseEnter={() => {
+                                        if (!isWeChatPinned) setShowWeChat(true);
+                                        setLastClickedTooltip('wechat');
+                                    }}
+                                    onMouseLeave={() => !isWeChatPinned && setShowWeChat(false)}
+                                    onClick={() => {
+                                        setIsWeChatPinned(!isWeChatPinned);
+                                        setShowWeChat(!isWeChatPinned);
+                                        setLastClickedTooltip('wechat');
+                                    }}
+                                    className={`p-2 sm:p-2 transition-colors duration-200 ${isWeChatPinned
+                                        ? 'text-accent'
+                                        : 'text-neutral-600 dark:text-neutral-400 hover:text-accent'
+                                        }`}
+                                    aria-label={link.name}
+                                >
+                                    <QrCode className="h-5 w-5" />
+                                </button>
+
+                                {/* WeChat tooltip */}
+                                <AnimatePresence>
+                                    {(showWeChat || isWeChatPinned) && (
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 10, scale: 0.8 }}
+                                            animate={{ opacity: 1, y: -10, scale: 1 }}
+                                            exit={{ opacity: 0, y: -20, scale: 0.8 }}
+                                            className={`absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full bg-neutral-800 text-white px-4 py-3 rounded-lg text-sm font-medium shadow-lg max-w-[calc(100vw-2rem)] ${lastClickedTooltip === 'wechat' ? 'z-20' : 'z-10'
+                                                }`}
+                                            onMouseEnter={() => {
+                                                if (!isWeChatPinned) setShowWeChat(true);
+                                                setLastClickedTooltip('wechat');
+                                            }}
+                                            onMouseLeave={() => !isWeChatPinned && setShowWeChat(false)}
+                                        >
+                                            <div className="text-center">
+                                                <div className="flex items-center justify-center space-x-2 mb-2">
+                                                    <p className="font-semibold">{messages.profile.wechat}</p>
+                                                    {!isWeChatPinned && (
+                                                        <div className="flex items-center space-x-0.5 text-xs text-neutral-400 opacity-60">
+                                                            <Pin className="h-2.5 w-2.5" />
+                                                            <span className="hidden sm:inline">{messages.profile.click}</span>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                                <a
+                                                    href={link.href}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    aria-label={messages.profile.wechatQrCode}
+                                                >
+                                                    <Image
+                                                        src={link.href}
+                                                        alt={messages.profile.wechatQrCode}
+                                                        width={160}
+                                                        height={160}
+                                                        className="h-40 w-40 rounded-md border border-white/15 bg-white object-contain p-1 shadow-sm"
+                                                    />
+                                                </a>
+                                                <p className="mt-2 text-xs text-neutral-300">{messages.profile.wechatQrCode}</p>
                                             </div>
                                             <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-neutral-800"></div>
                                         </motion.div>

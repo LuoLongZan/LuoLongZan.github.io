@@ -4,4 +4,4 @@ My research interest is broadly in **Machine Learning Systems**, with a particul
 
 Be yourself, and be the best version of yourself.
 
-You can also find me on [GitHub](https://github.com/LuoLongZan/) or via [WeChat](/images/WeChat.jpg).
+You can also find me on [GitHub](https://github.com/LuoLongZan/).

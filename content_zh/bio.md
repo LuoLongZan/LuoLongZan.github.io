@@ -4,4 +4,4 @@
 
 Be yourself, and be the best version of yourself.
 
-也可以通过 [GitHub](https://github.com/LuoLongZan/) 或 [微信](/images/WeChat.jpg) 找到我。
+也可以通过 [GitHub](https://github.com/LuoLongZan/) 找到我。

@@ -15,6 +15,8 @@ export interface LocaleMessages {
   };
   profile: {
     email: string;
+    wechat: string;
+    wechatQrCode: string;
     location: string;
     workAddress: string;
     click: string;
@@ -67,6 +69,8 @@ const en: LocaleMessages = {
   },
   profile: {
     email: 'Email',
+    wechat: 'WeChat',
+    wechatQrCode: 'Scan QR code',
     location: 'Location',
     workAddress: 'Work Address',
     click: 'Click',
@@ -119,6 +123,8 @@ const zh: LocaleMessages = {
   },
   profile: {
     email: '邮箱',
+    wechat: '微信',
+    wechatQrCode: '扫码添加微信',
     location: '地址',
     workAddress: '办公地址',
     click: '点击',

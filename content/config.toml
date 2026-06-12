@@ -12,6 +12,7 @@ avatar = "/images/llz.png"
 
 [social]
 email = "2200013198@stu.pku.edu.cn"
+wechat = "/images/WeChat.jpg"
 location = "Beijing, China"
 location_url = "https://maps.google.com/?q=Peking+University"
 location_details = [
