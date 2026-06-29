@@ -31,6 +31,7 @@
 
 ## Awards & Honors
 
+- **Weiming Bachelor** (*2026/06, the only recipient in EECS*)
 - **National Scholarship** (*2025, 2024, 2023*)
 - **SenseTime Scholarship** (*2025*)
 - **Beijing Municipal Triple-A Student** (*2025*)

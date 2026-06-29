@@ -3,6 +3,12 @@ title = "Awards"
 description = "Honors and awards I have received."
 
 [[items]]
+title = "Weiming Bachelor"
+subtitle = "Peking University"
+date = "2026/06"
+content = "The only recipient in EECS."
+
+[[items]]
 title = "National Scholarship"
 subtitle = "Peking University"
 date = "2025"
@@ -18,7 +24,7 @@ content = "Awarded for academic and research excellence."
 title = "Beijing Municipal Triple-A Student"
 subtitle = "Beijing"
 date = "2025"
-content = "The only recipient in the college this year."
+content = "The only recipient in EECS this year."
 
 [[items]]
 title = "National Scholarship"

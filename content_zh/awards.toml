@@ -3,6 +3,12 @@ title = "奖项"
 description = "部分荣誉与奖励。"
 
 [[items]]
+title = "未名学士"
+subtitle = "北京大学"
+date = "2026/06"
+content = "信息科学技术学院唯一获评者。"
+
+[[items]]
 title = "国家奖学金"
 subtitle = "北京大学"
 date = "2025"
@@ -18,7 +24,7 @@ content = "因学业与科研表现获得奖励。"
 title = "北京市三好学生"
 subtitle = "北京市"
 date = "2025"
-content = "学院本年度唯一获评者。"
+content = "信息科学技术学院本年度唯一获评者。"
 
 [[items]]
 title = "国家奖学金"
