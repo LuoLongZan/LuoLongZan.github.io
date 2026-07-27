@@ -6,7 +6,7 @@
 
 ## Publications
 
-- **PolySplat: Workload-Regime-Aware Rasterization for 3D Gaussian Splatting**, under review at NeurIPS 2026. (first author)
+- **PolySplat: Workload-Regime-Aware Rasterization for 3D Gaussian Splatting**. (first author)
 - **DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning**, ICML 2026. (co-first author)
 - **Lift3D Foundation Policy: Lifting 2D Large-Scale Pretrained Models for Robust 3D Robotic Manipulation**, CVPR 2025.
 - **GarmentLab: A Unified Simulation and Benchmark for Garment Manipulation**, NeurIPS 2024.

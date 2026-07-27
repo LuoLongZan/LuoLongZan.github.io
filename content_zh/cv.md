@@ -6,7 +6,7 @@
 
 ## 论文
 
-- **PolySplat: Workload-Regime-Aware Rasterization for 3D Gaussian Splatting**，投稿 NeurIPS 2026（一作，审稿中）。
+- **PolySplat: Workload-Regime-Aware Rasterization for 3D Gaussian Splatting**（一作）。
 - **DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning**，ICML 2026。（共同一作）
 - **Lift3D Foundation Policy: Lifting 2D Large-Scale Pretrained Models for Robust 3D Robotic Manipulation**，CVPR 2025。
 - **GarmentLab: A Unified Simulation and Benchmark for Garment Manipulation**，NeurIPS 2024。
