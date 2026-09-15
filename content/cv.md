@@ -33,7 +33,7 @@
 ## Awards & Honors
 
 - **2026 CCF Qihang Program for College Students** (*2026/07, one of only two recipients at Peking University*)
-- **Weiming Bachelor** (*2026/06, the only recipient in EECS*)
+- **Weiming Bachelor** (*2026/06*)
 - **National Scholarship** (*2025, 2024, 2023*)
 - **SenseTime Scholarship** (*2025*)
 - **Beijing Municipal Triple-A Student** (*2025*)
