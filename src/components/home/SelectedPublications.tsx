@@ -70,6 +70,30 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                 {pub.description}
                             </p>
                         )}
+                        {(pub.url || pub.code) && (
+                            <div className="flex flex-wrap gap-3 mt-3 text-sm font-medium">
+                                {pub.url && (
+                                    <a
+                                        href={pub.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-accent hover:underline"
+                                    >
+                                        {messages.publications.paper}
+                                    </a>
+                                )}
+                                {pub.code && (
+                                    <a
+                                        href={pub.code}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-accent hover:underline"
+                                    >
+                                        {messages.publications.code}
+                                    </a>
+                                )}
+                            </div>
+                        )}
                     </motion.div>
                 ))}
             </div>

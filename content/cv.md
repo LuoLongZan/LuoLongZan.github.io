@@ -8,7 +8,7 @@
 
 - **Strata: Hierarchical Partial Compositing for Distributed 3D Gaussian Splatting Training**, under review, 2026. (first author)
 - **PolySplat: Workload-Regime-Aware Rasterization for 3D Gaussian Splatting**. (first author)
-- **DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning**, ICML 2026. (co-first author)
+- **[DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning](https://arxiv.org/abs/2605.30859)**, ICML 2026. (co-first author) [Code](https://github.com/AFDWang/DARTS)
 - **Lift3D Foundation Policy: Lifting 2D Large-Scale Pretrained Models for Robust 3D Robotic Manipulation**, CVPR 2025.
 - **GarmentLab: A Unified Simulation and Benchmark for Garment Manipulation**, NeurIPS 2024.
 
