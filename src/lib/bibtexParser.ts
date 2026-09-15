@@ -1,4 +1,4 @@
-import { Publication, PublicationType, ResearchArea } from '@/types/publication';
+import { Publication, PublicationStatus, PublicationType, ResearchArea } from '@/types/publication';
 import { getConfig } from './config';
 import { getRuntimeI18nConfig } from './i18n/config';
 
@@ -18,6 +18,10 @@ const typeMapping: Record<string, PublicationType> = {
   unpublished: 'preprint',
   misc: 'preprint',
 };
+
+const publicationStatuses: PublicationStatus[] = [
+  'published', 'accepted', 'under-review', 'submitted', 'in-preparation', 'draft',
+];
 
 // Convert month names to numbers
 const monthMapping: Record<string, number> = {
@@ -70,7 +74,9 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       year,
       month: monthMapping[tags.month?.toLowerCase()] ? String(month) : tags.month,
       type,
-      status: 'published',
+      status: publicationStatuses.includes(tags.status as PublicationStatus)
+        ? tags.status as PublicationStatus
+        : 'published',
       tags: keywords,
       keywords,
       researchArea: detectResearchArea(tags.title, keywords),
@@ -91,7 +97,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'project']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'project', 'status']),
     };
 
     // Clean up undefined fields

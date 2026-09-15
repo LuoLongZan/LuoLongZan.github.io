@@ -1,3 +1,5 @@
+import type { PublicationStatus } from '@/types/publication';
+
 export interface LocaleMessages {
   common: {
     all: string;
@@ -45,6 +47,7 @@ export interface LocaleMessages {
     paper: string;
     project: string;
     code: string;
+    status: Record<PublicationStatus, string>;
   };
   footer: {
     lastUpdated: string;
@@ -99,6 +102,14 @@ const en: LocaleMessages = {
     paper: 'Paper',
     project: 'Project',
     code: 'Code',
+    status: {
+      published: 'Published',
+      accepted: 'Accepted',
+      'under-review': 'Under review',
+      submitted: 'Submitted',
+      'in-preparation': 'In preparation',
+      draft: 'Draft',
+    },
   },
   footer: {
     lastUpdated: 'Last updated',
@@ -153,6 +164,14 @@ const zh: LocaleMessages = {
     paper: '论文',
     project: '项目',
     code: '代码',
+    status: {
+      published: '已发表',
+      accepted: '已接收',
+      'under-review': '投稿中',
+      submitted: '已投稿',
+      'in-preparation': '撰写中',
+      draft: '草稿',
+    },
   },
   footer: {
     lastUpdated: '最近更新',

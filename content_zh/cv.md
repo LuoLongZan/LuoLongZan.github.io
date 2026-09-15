@@ -6,6 +6,7 @@
 
 ## 论文
 
+- **Strata: Hierarchical Partial Compositing for Distributed 3D Gaussian Splatting Training**，投稿中，2026。（一作）
 - **PolySplat: Workload-Regime-Aware Rasterization for 3D Gaussian Splatting**（一作）。
 - **DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning**，ICML 2026。（共同一作）
 - **Lift3D Foundation Policy: Lifting 2D Large-Scale Pretrained Models for Robust 3D Robotic Manipulation**，CVPR 2025。
@@ -31,6 +32,7 @@
 
 ## 奖项与荣誉
 
+- **2026年度CCF大学生启航计划** (*2026/07，北京大学仅两人获得*)
 - **未名学士** (*2026/06，信息科学技术学院唯一*)
 - **国家奖学金** (*2025、2024、2023*)
 - **商汤奖学金** (*2025*)

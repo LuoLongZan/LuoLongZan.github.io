@@ -6,6 +6,7 @@
 
 ## Publications
 
+- **Strata: Hierarchical Partial Compositing for Distributed 3D Gaussian Splatting Training**, under review, 2026. (first author)
 - **PolySplat: Workload-Regime-Aware Rasterization for 3D Gaussian Splatting**. (first author)
 - **DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning**, ICML 2026. (co-first author)
 - **Lift3D Foundation Policy: Lifting 2D Large-Scale Pretrained Models for Robust 3D Robotic Manipulation**, CVPR 2025.
@@ -31,6 +32,7 @@
 
 ## Awards & Honors
 
+- **2026 CCF Qihang Program for College Students** (*2026/07, one of only two recipients at Peking University*)
 - **Weiming Bachelor** (*2026/06, the only recipient in EECS*)
 - **National Scholarship** (*2025, 2024, 2023*)
 - **SenseTime Scholarship** (*2025*)

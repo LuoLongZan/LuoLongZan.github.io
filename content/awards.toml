@@ -3,6 +3,12 @@ title = "Awards"
 description = "Honors and awards I have received."
 
 [[items]]
+title = "2026 CCF Qihang Program for College Students"
+subtitle = "CCF"
+date = "2026/07"
+content = "One of only two recipients at Peking University."
+
+[[items]]
 title = "Weiming Bachelor"
 subtitle = "Peking University"
 date = "2026/06"

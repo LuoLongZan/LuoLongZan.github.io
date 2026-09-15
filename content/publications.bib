@@ -1,3 +1,15 @@
+@unpublished{luo2026strata,
+  selected = {true},
+  title = {Strata: Hierarchical Partial Compositing for Distributed 3D Gaussian Splatting Training},
+  author = {Longzan Luo and Bin Cui and Xupeng Miao},
+  year = {2026},
+  status = {under-review},
+  note = {Under review},
+  description = {Strata accelerates distributed 3D Gaussian Splatting training through hierarchical partial compositing and load-aware batch composition. Across four scenes on eight GPUs, it achieves up to 14.20x training speedup over Grendel-GS and reduces logical rendering payload by 10.60x-52.42x.},
+  abstract = {Strata is a distributed 3D Gaussian Splatting training system that exchanges per-pixel color and transmittance partials instead of Gaussian attributes and gradients during rendering, bounding rendering traffic by image resolution and GPU count. Hierarchical partial compositing coordinates device-adaptive depth slabs, GPU regional compositing, and node-level support plans, while load-aware batch composition balances GPU workloads and the runtime overlaps rendering and exchange across views. Across four scenes on eight GPUs, Strata achieves training speedups over Grendel-GS of 6.22x-14.20x on RTX 4090 D and 5.326x-11.940x on H100, reducing logical rendering payload by 10.60x-52.42x.},
+  keywords = {Machine Learning Systems, 3D Gaussian Splatting, Distributed Training, GPU Rendering}
+}
+
 @misc{luo2026polysplat,
   selected = {true},
   title = {PolySplat: Workload-Regime-Aware Rasterization for 3D Gaussian Splatting},

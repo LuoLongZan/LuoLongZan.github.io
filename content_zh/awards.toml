@@ -3,6 +3,12 @@ title = "奖项"
 description = "部分荣誉与奖励。"
 
 [[items]]
+title = "2026年度CCF大学生启航计划"
+subtitle = "CCF"
+date = "2026/07"
+content = "北京大学仅两人获得。"
+
+[[items]]
 title = "未名学士"
 subtitle = "北京大学"
 date = "2026/06"
